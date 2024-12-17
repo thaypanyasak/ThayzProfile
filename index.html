@@ -45,12 +45,31 @@
     <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
     <link rel="stylesheet" href="css/styles.css" />
 <style>
+
 .about-section .wrapper {
-    margin-bottom: 2.5rem;
-    margin-top: 2rem;
+    margin-bottom: 2.5rem; 
+    margin-top: 2rem; 
     display: flex;
-    gap: 10rem;
+    gap: 10rem; 
 }
+
+@media (max-width: 768px) {
+  .about-section .wrapper {
+    flex-direction: column; 
+    gap: 1rem; 
+    margin-bottom: 1.5rem; 
+    margin-top: 1.5rem; 
+  }
+
+  .about-section .wrapper > * {
+    margin-bottom: 1rem; 
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+}
+
+
+
 </style>
   </head>
 
